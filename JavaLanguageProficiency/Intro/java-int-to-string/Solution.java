@@ -27,7 +27,6 @@ public class Solution {
 class DoNotTerminate {
 
     public static class ExitTrappedException extends SecurityException {
-
         private static final long serialVersionUID = 1;
     }
 

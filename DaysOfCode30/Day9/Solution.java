@@ -7,6 +7,7 @@ import java.util.concurrent.*;
 import java.util.function.*;
 import java.util.regex.*;
 import java.util.stream.*;
+
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
@@ -20,10 +21,11 @@ class Result {
      */
 
     public static int factorial(int n) {
-        if(n == 0)
+        if (n == 0) {
             return 1;
-        else
+        } else {
             return n * factorial(n - 1);
+        }
     }
 
 }
@@ -34,7 +36,6 @@ public class Solution {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
-
         int result = Result.factorial(n);
 
         bufferedWriter.write(String.valueOf(result));

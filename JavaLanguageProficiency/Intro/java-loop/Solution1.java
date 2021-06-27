@@ -5,9 +5,9 @@ import java.util.concurrent.*;
 import java.util.function.*;
 import java.util.regex.*;
 import java.util.stream.*;
+
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
-
 
 
 public class Solution1 {
@@ -16,7 +16,7 @@ public class Solution1 {
 
         int N = Integer.parseInt(bufferedReader.readLine().trim());
 
-        for(int i = 1; i <= 10; i++){
+        for (int i = 1; i <= 10; i++) {
 
             System.out.printf("%d x %d = %d\n", N, i, N * i);
         }

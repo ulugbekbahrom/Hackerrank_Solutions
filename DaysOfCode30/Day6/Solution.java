@@ -9,22 +9,19 @@ public class Solution {
         int number = scanner.nextInt();
         String str;
 
-        for(int i = 0; i < number; i++){
+        for (int i = 0; i < number; i++) {
             str = scanner.next();
 
-            for(int j = 0; j < str.length(); j+=2){
-
+            for (int j = 0; j < str.length(); j += 2) {
                 System.out.print(str.charAt(j));
-
             }
 
             System.out.print(" ");
 
-            for(int j = 1; j < str.length(); j+=2){
-
+            for (int j = 1; j < str.length(); j += 2) {
                 System.out.print(str.charAt(j));
-
             }
+
             System.out.println();
         }
     }

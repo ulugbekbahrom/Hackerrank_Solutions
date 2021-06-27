@@ -1,21 +1,25 @@
 //Complete this code or write your own from scratch
+
 import java.util.*;
 import java.io.*;
 
-class Solution{
-    public static void main(String []argh){
+class Solution {
+    public static void main(String[] argh) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         Map<String, Integer> phoneNumber = new HashMap<String, Integer>();
-        for(int i = 0; i < n; i++){
+
+        for (int i = 0; i < n; i++) {
+
             String name = in.next();
             int phone = in.nextInt();
             in.nextLine();
             phoneNumber.put(name, phone);
         }
-        while(in.hasNext()){
+        while (in.hasNext()) {
+
             String s = in.next();
-            if(phoneNumber.get(s) == null){
+            if (phoneNumber.get(s) == null) {
                 System.out.println("Not found");
             } else {
                 System.out.println(s + "=" + phoneNumber.get(s));

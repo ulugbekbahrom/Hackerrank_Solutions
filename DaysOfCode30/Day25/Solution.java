@@ -4,7 +4,7 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
         Scanner input = new Scanner(System.in);
         int T = input.nextInt();
 
@@ -16,17 +16,20 @@ public class Solution {
 
     public static boolean isPrime(int number) {
 
-        if (number <= 1)
+        if (number <= 1) {
             return false;
-        else if (number == 2)
+        } else if (number == 2) {
             return true;
-        else if (number % 2 == 0)
+        } else if (number % 2 == 0) {
             return false;
+        }
 
         int sq = (int) Math.sqrt(number);
         for (int i = 3; i <= sq; i += 2) {
-            if (number % i == 0)
+
+            if (number % i == 0) {
                 return false;
+            }
         }
 
         return true;

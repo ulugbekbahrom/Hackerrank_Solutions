@@ -7,9 +7,9 @@ import java.util.concurrent.*;
 import java.util.function.*;
 import java.util.regex.*;
 import java.util.stream.*;
+
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
-
 
 
 public class Solution {
@@ -19,7 +19,8 @@ public class Solution {
         try {
             String S = bufferedReader.readLine();
             System.out.println(Integer.parseInt(S));
-        } catch(NumberFormatException e){
+        } catch (NumberFormatException e) {
+
             System.out.println("Bad String");
         }
         bufferedReader.close();
